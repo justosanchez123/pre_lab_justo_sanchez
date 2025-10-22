@@ -1,0 +1,74 @@
+/* Guarda esto como Nav.css (o como prefieras) e impórtalo en tu Nav.js */
+
+/* ---- Contenedor principal de la navegación ---- */
+nav {
+  background-color: #1e1e1e; /* Gris más claro que el fondo */
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  max-width: 15.625rem; /* 250px */
+  color: #f5f5f5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ---- Lista de enlaces (ul) ---- */
+nav ul {
+  display: flex; /* ¡La clave para una barra horizontal! */
+  align-items: center; /* Centra los ítems verticalmente */
+  list-style: none; /* Quita los puntos (bullets) de la lista */
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem; /* Espacio entre cada elemento 'li' */
+}
+
+/* ---- Elementos de la lista (li) ---- */
+nav li {
+  /* No necesitamos mucho aquí gracias a flex y gap */
+}
+
+/* ---- Estilo para los Links (que se renderizan como <a>) ---- */
+nav ul li a {
+  text-decoration: none; /* Quita el subrayado */
+  color: #333; /* Color de texto oscuro */
+  font-weight: 600; /* Texto semi-negrita */
+  font-size: 1rem; /* Tamaño de fuente estándar */
+  padding: 0.5rem; /* Un poco de relleno para que sea más fácil hacer clic */
+  border-radius: 5px; /* Bordes ligeramente redondeados */
+  transition: color 0.2s ease, background-color 0.2s ease; /* Transición suave */
+}
+
+/* ---- Efecto al pasar el mouse (hover) ---- */
+nav ul li a:hover {
+  color: #007bff; /* Color azul al pasar el mouse */
+  background-color: #f4f4f4; /* Fondo gris muy claro */
+}
+
+/* ---- Posicionamiento del Carrito (último 'li') ---- */
+/* Esto empuja el carrito hacia la extrema derecha */
+nav li:last-child {
+  margin-left: auto; /* ¡Magia de Flexbox! */
+  position: relative; /* MUY IMPORTANTE: para posicionar el 'badge' (span) */
+}
+
+/* ---- El 'badge' o contador del carrito (.in-cart) ---- */
+.in-cart {
+  position: absolute; /* Posición absoluta RELATIVA a 'li:last-child' */
+  top: -10px; /* Lo sube un poco */
+  right: -12px; /* Lo mueve a la derecha */
+
+  background-color: #dc3545; /* Fondo rojo (destaca) */
+  color: white; /* Texto blanco */
+  
+  width: 22px; /* Ancho fijo */
+  height: 22px; /* Alto fijo */
+  border-radius: 50%; /* Lo hace perfectamente redondo */
+
+  display: flex; /* Para centrar el número dentro del círculo */
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.75rem; /* Tamaño de fuente pequeño para el número */
+  font-weight: bold; /* Número en negrita */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Sombra ligera para el badge */
+}
