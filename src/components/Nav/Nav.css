@@ -30,10 +30,10 @@ nav li {
 /* ---- Estilo para los Links (que se renderizan como <a>) ---- */
 nav ul li a {
   text-decoration: none; /* Quita el subrayado */
-  color: #333; /* Color de texto oscuro */
+  color: #ccda4f; /* Color de texto oscuro */
   font-weight: 600; /* Texto semi-negrita */
   font-size: 1rem; /* Tamaño de fuente estándar */
-  padding: 0.5rem; /* Un poco de relleno para que sea más fácil hacer clic */
+  padding: 0.01rem; /* Un poco de relleno para que sea más fácil hacer clic */
   border-radius: 5px; /* Bordes ligeramente redondeados */
   transition: color 0.2s ease, background-color 0.2s ease; /* Transición suave */
 }

@@ -23,7 +23,7 @@ useEffect(()=>{
 
     return (
         <section>
-            <h1>Bienvenida</h1>
+            <h1>Bienvenidos</h1>
             <ItemList list={products} />
         </section>
     );

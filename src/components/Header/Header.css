@@ -1,0 +1,7 @@
+/* ... tus otros estilos ... */
+
+.header-logo {
+  height: 100px;  /* Ajusta esta altura como necesites */
+  width: auto;   /* Mantiene la proporción de la imagen */
+  display: center; /* Ayuda a alinear mejor la imagen */
+}

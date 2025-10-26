@@ -9,14 +9,9 @@ export const Nav = () => {
             <li>
                 <Link to={"/"}>Home</Link>
             </li>
+                        
             <li>
-                <Link to={"/category/dulce"}>Dulce</Link>
-            </li>
-            <li>
-                <Link to={"category/salado"}>Salado</Link>
-            </li>
-            <li>
-                <Link to={"category/metal"}>Metal</Link>
+                <Link to={"category/productos"}>Productos</Link>
             </li>
             <li>
                 <Link to="/cart">Carrito</Link>
